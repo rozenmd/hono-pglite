@@ -1,0 +1,27 @@
+{
+  "name": "hono-pglite",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest --run",
+    "test:watch": "vitest --watch",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.19",
+    "@types/pg": "^8.15.4",
+    "get-port": "^7.1.0",
+    "pglite-server": "^0.1.4",
+    "typescript": "^5.5.2",
+    "vitest": "~3.2.0",
+    "wrangler": "^4.24.3"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.3.4",
+    "hono": "^4.8.4",
+    "pg": "^8.16.3"
+  }
+}
